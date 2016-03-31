@@ -1,0 +1,21 @@
+import UIKit
+
+
+var  ih = 0...100
+var mensaje = ""
+
+for i in ih{
+    if i % 5 == 0{
+        mensaje = ("Bingo!!! ")
+    }
+    if i % 2 == 0{
+        mensaje = mensaje + "Par!!! "
+    }else{
+        mensaje = mensaje + "Impar!!! "
+    }
+    if i >= 30 && i <= 40{
+        mensaje = mensaje + "Viva Swift!!! "
+    }
+    print("\(i) " + mensaje)
+    mensaje = ""
+}
